@@ -10,7 +10,7 @@ This project is a menu-driven embedded system utilizing an ESP32 micro-controlle
 * **🖥️ Dynamic UI Rendering:** Features a responsive graphical interface, complete with real-time dynamic cursor tracking implemented via ternary operators for visual feedback.
 
 ## 🛠️ Hardware Architecture 
-[cite_start]The hardware logic and wiring were fully modeled and verified using the Wokwi simulation environment prior to physical deployment[cite: 3].
+The hardware logic and wiring were fully modeled and verified using the Wokwi simulation environment prior to physical deployment.
 * **Core Processor:** ESP32 Micro-controller.
 * **Display:** ILI9341 SPI Display connected via hardware SPI (MOSI, SCK, CS, DC, RST).
 * **Navigation Interface:** Three push buttons (Up, Down, Enter) wired to GPIO pins 25, 26, and 27, configured with internal pull-up resistors (`INPUT_PULLUP`).
