@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "author": "Comfort Mwanga",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 38.4, "left": 24.04, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 121.4,
+      "left": -134.4,
+      "attrs": { "color": "teal", "label": "UP" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 198.2,
+      "left": -134.4,
+      "attrs": { "color": "pink", "label": "DOWN" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 265.4,
+      "left": -134.4,
+      "attrs": { "color": "red", "label": "ENTER" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -58.9, "left": -144.2, "attrs": {} },
+    {
+      "type": "wokwi-ili9341",
+      "id": "lcd1",
+      "top": -100.7,
+      "left": 346.8,
+      "rotate": 90,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:CS", "esp:5", "green", [ "v0" ] ],
+    [ "lcd1:D/C", "esp:2", "green", [ "v0" ] ],
+    [ "lcd1:RST", "esp:4", "green", [ "v0" ] ],
+    [ "lcd1:MOSI", "esp:23", "green", [ "v0" ] ],
+    [ "lcd1:SCK", "esp:18", "green", [ "v0" ] ],
+    [ "lcd1:VCC", "esp:3V3", "red", [ "v-134.4", "h-326.4", "v38.4" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "lcd1:LED", "esp:3V3", "green", [ "v-153.6", "h-374.41" ] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "pot1:SIG", "esp:34", "green", [ "v0" ] ],
+    [ "esp:GND.1", "pot1:GND", "black", [ "h-67.05", "v-153.6", "h-76.8" ] ],
+    [ "btn1:1.l", "esp:25", "green", [ "h0", "v-19.2", "h153.6", "v28.8" ] ],
+    [ "btn2:1.l", "esp:26", "green", [ "h-9.6", "v-38.4", "h163.2", "v-19.2" ] ],
+    [ "esp:27", "btn3:1.l", "green", [ "h-57.45", "v96", "h-105.6" ] ],
+    [ "esp:GND.1", "btn3:2.l", "black", [ "h-38.25", "v124.8", "h-124.8" ] ],
+    [ "esp:GND.1", "btn2:2.l", "black", [ "h-28.65", "v57.6", "h-134.4" ] ],
+    [ "esp:GND.1", "btn1:2.l", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
