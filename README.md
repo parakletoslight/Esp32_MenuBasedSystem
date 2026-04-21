@@ -18,3 +18,21 @@ The hardware logic and wiring were fully modeled and verified using the Wokwi si
 
 ## 🔄 System Flow & Functionality
 The system successfully initializes to the Main Menu. By pressing the Select/Enter button while hovering over option 1, the FSM transitions to the `VIEW_DATA` state, fetching and rendering the current environmental parameters dynamically on the SPI display. When modifying settings, pressing the Enter button confirms the new potentiometer setting and permanently burns it into the flash memory via `preferences.putInt()`.
+
+## 📸 System Gallery
+<img width="1182" height="753" alt="image" src="https://github.com/user-attachments/assets/fdc83422-80df-49cc-a0dd-9c3a9a300f14" />
+
+<img width="1182" height="753" alt="image" src="https://github.com/user-attachments/assets/d752b450-1066-4b64-baf0-0f42da79db7f" />
+
+<img width="1261" height="727" alt="image" src="https://github.com/user-attachments/assets/671e932c-9af8-42f4-aa72-8fdd1db70206" />
+
+## 🎥 Project Media & Demo
+[Screencast from 03-29-2026 11:21:38 AM.webm](https://github.com/user-attachments/assets/1623b696-2a6f-4174-a5fe-41aa8fe2d61e)
+
+https://github.com/user-attachments/assets/c57b315b-ed0c-4659-94a1-6b9b74ae76b0
+
+## 🤝 Project Collaborators
+* Comfort Omuchesia Mwanga
+* Alexandra Maari Mich
+* Kelly Sebastian Barasa
+
